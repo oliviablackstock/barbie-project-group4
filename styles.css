@@ -1,3 +1,15 @@
+:root {
+    --primary-color: #e305ad;
+    --text-color: #000000;
+    --white: #FFFFFF;
+    --secondary-color: #f658b8;
+    --blue-purple: #819ae7;
+    --blue: #3e96d6;
+    --white: #FFFFFF;
+    --lightest-pink: #f29ad8; 
+    --purple-color: #bf98f2; 
+}
+
 body, html {
     margin: 0;
     padding: 0;

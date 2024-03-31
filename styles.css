@@ -1,158 +1,234 @@
-body, html {
+* {
     margin: 0;
     padding: 0;
-    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFC0CB;
+    color: #000;
+    line-height: 1.6;
 }
 
 header {
-    padding: 10px 0;
-    position: fixed; /* Fix the header to the top */
-    width: 100%; /* Occupy the full width of the window */
-    z-index: 1000; /* Ensure the header is above the content */
-}
-
-p, a {
-    font-family: 'Glacial Indifference', sans-serif;                                              
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 30px 0 0 100px;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10%;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    color: rgb(55, 128, 183);
-}
-
-.carousel {
-    position: relative;
-    height: 100%;
-    display: flex;
-}
-
-.slides {
-    flex: 1;
-}
-
-.slides section {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
+    background-image: url('images/rev-1-txtd_barbie_first_look_barbie_high_res_jpeg-1-a_wide-f6c6c80507174b14c2819d1716cfd16a853b35d8-s1400-c100.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
     width: 100%;
-    height: 100%;
-    z-index: 1; /* Ensure the open section is on top */
-    background-size: cover; /* Adjust the image size to cover the section */
-    background-position: center; /* Center the image in the section */
+    position: relative;
 }
 
-.slides input[type="radio"]:checked + .controls + .slides section {
-    display: block;
+.symbol img {
+    width: 80px;
 }
 
-#slide1:checked ~ .slides .main-section,
-#slide2:checked ~ .slides section:nth-of-type(2),
-#slide3:checked ~ .slides section:nth-of-type(3),
-#slide4:checked ~ .slides section:nth-of-type(4),
-#slide5:checked ~ .slides section:nth-of-type(5) {
-    display: block;
+.nav, .hero{
+    background-color:  transparent;
 }
-
-/* Background images for each section */
-#slide1:checked ~ .slides .main-section {
-    background-image: url('imgs/450_1000.jpg');
-}
-
-#slide2:checked ~ .slides section:nth-of-type(2) {
-    background-image: url('imagen_seccion2.jpg');
-}
-
-#slide3:checked ~ .slides section:nth-of-type(3) {
-    background-image: url('imagen_seccion3.jpg');
-}
-
-#slide4:checked ~ .slides section:nth-of-type(4) {
-    background-image: url('History_page.png');
-}
-
-#slide5:checked ~ .slides section:nth-of-type(5) {
-    background-image: url('imagen_seccion5.jpg');
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-.controls {
+nav {
+    height: 80px;
     display: flex;
-    flex-direction: column;
-    position: relative; /* Adjust to relative position */
-    z-index: 2; /* Ensure controls are above the sections */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0rem calc((100vw - 1300px)/2);
+}
+.nav .nav-items a {
+    margin: 0 10px;
+    font-weight: bold;
 }
 
-.controls {
+.nav-items a {
+    color: #FFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-items a:hover {
+    color:#4FC0FF;
+}
+nav a, nav button {
+    text-decoration: none;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    max-width: 150px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    border: 2px solid #E305AD;
+    color: #E305AD;
+    cursor: pointer;
+    margin-left: auto;
     position: absolute;
-    bottom: 10%;
-    left: 5%;
+    bottom: 40px;
+    right: 0.5%;
     transform: translateX(-50%);
 }
 
-.controls label::before {
-    content: '';
-    display: block;
-    width: 12px;
-    height: 12px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    margin: 5px 0;
-    transition: background-color 0.5s ease; /* Smooth transition of background color */
+.hero {
+    display: flex;
+    justify-content: start;
+    padding: 0 30px;
 }
 
-.controls label:hover::before {
-    background-color: #2091f3; /* Change background color on hover */
+.hero h1 {
+    font-family:'Font Nickainley', cursive;
+    font-size: 6em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:#E305AD;
+    color:#FFFFFF
+    
+}
+main {
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    background-color: #FFF7FC;
 }
 
-.slides input[type="radio"]:checked + .controls label::before {
-    background-color: #2091f3; /* Blue fill for the active section circle */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#slide1:checked ~ .controls label:nth-of-type(1)::before,
-#slide2:checked ~ .controls label:nth-of-type(2)::before,
-#slide3:checked ~ .controls label:nth-of-type(3)::before,
-#slide4:checked ~ .controls label:nth-of-type(4)::before {
-    background-color: #2091f3; /* Blue fill for the active section circle */
+.ratings, .movie-type {
+    flex: 1;
+    margin: 30px;
 }
 
-/* Location of paragraphs for each section */
+.ratings, .movie-type {
+    align-self: flex-start;
+}
 
-.slides section:nth-of-type(4) p {
-    position: absolute;
-    bottom: 100px; /* Adjust vertical position as needed */
-    left: 170px; /* Adjust horizontal position as needed */
-    color: #fff; /* Text color */
-    z-index: 2; /* Ensure text is above the navigation points */
-    max-width: 400px; /* Set maximum width for the paragraph */
+.ratings, .about-movie {
+    flex: 1;
+    margin: 30px;
 }
-  
-/* Separate text into paragraphs of 6 words */
-.slides section:nth-of-type(4) p::after {
-    content: "\A"; /* Add a line break */
-    white-space: pre; /* Maintain white space */
+
+.ratings, .movie-type, .about-movie {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    color:#E305AD
 }
-  
-/* Style for paragraphs of 6 words */
-.slides section:nth-of-type(4) p span {
+
+.ratings h2, .movie-type h2, .about-movie h2 {
+    color: #4FC0FF;
+    margin-bottom: 0.5em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:#FF69B4;
+    font-size: 2em;
+}
+
+.movie-type .type span {
     display: inline-block;
-    max-width: 100%; /* Prevent text from exceeding maximum width */
+    margin-right: 10px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    border: 2px solid #E305AD;
+    color: #E305AD;
 }
+
+.about-movie p {
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+.movie-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.movie-image {
+    width: 32%;
+    height: auto; 
+    margin: 0 1%; 
+}
+
+
+footer {
+    background: #F29AD8;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+footer img {
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    header, .nav, .hero-container {
+        flex-direction: column;
+    }
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    .ratings, .about-movie {
+        flex-basis: 100%;
+    }
+
+    .ratings, .movie-type {
+        flex-basis: 100%;
+    }
+
+    .about-movie {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .movie-images {
+        flex-direction: column;
+    }
+
+    .movie-image {
+        width: 100%;
+        margin: 10px 0;
+
+    }
+
+    .nav .nav-items a {
+        font-size: 0.8em;
+    }
+
+    .movie-type .type {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .ratings, .movie-type {
+        padding: 10px;
+    }
+    
+    .hero h1{
+        display: none;
+    }
+}
+

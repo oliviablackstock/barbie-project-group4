@@ -168,3 +168,237 @@ input[type="radio"] {
     display: inline-block;
     max-width: 100%; /* Prevent text from exceeding maximum width */
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFC0CB;
+    color: #000;
+    line-height: 1.6;
+}
+
+header {
+    background-image: url('images/rev-1-txtd_barbie_first_look_barbie_high_res_jpeg-1-a_wide-f6c6c80507174b14c2819d1716cfd16a853b35d8-s1400-c100.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.symbol img {
+    width: 80px;
+}
+
+.nav, .hero{
+    background-color:  transparent;
+}
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0rem calc((100vw - 1300px)/2);
+}
+.nav .nav-items a {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.nav-items a {
+    color: #FFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-items a:hover {
+    color:#4FC0FF;
+}
+nav a, nav button {
+    text-decoration: none;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    max-width: 150px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    border: 2px solid #E305AD;
+    color: #E305AD;
+    cursor: pointer;
+    margin-left: auto;
+    position: absolute;
+    bottom: 40px;
+    right: 0.5%;
+    transform: translateX(-50%);
+}
+
+.hero {
+    display: flex;
+    justify-content: start;
+    padding: 0 30px;
+}
+
+.hero h1 {
+    font-family:'Font Nickainley', cursive;
+    font-size: 6em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:#E305AD;
+    color:#FFFFFF
+    
+}
+main {
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    background-color: #FFF7FC;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ratings, .movie-type {
+    flex: 1;
+    margin: 30px;
+}
+
+.ratings, .movie-type {
+    align-self: flex-start;
+}
+
+.ratings, .about-movie {
+    flex: 1;
+    margin: 30px;
+}
+
+.ratings, .movie-type, .about-movie {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    color:#E305AD
+}
+
+.ratings h2, .movie-type h2, .about-movie h2 {
+    color: #4FC0FF;
+    margin-bottom: 0.5em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:#FF69B4;
+    font-size: 2em;
+}
+
+.movie-type .type span {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    border: 2px solid #E305AD;
+    color: #E305AD;
+}
+
+.about-movie p {
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+.movie-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.movie-image {
+    width: 32%;
+    height: auto; 
+    margin: 0 1%; 
+}
+
+
+footer {
+    background: #F29AD8;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+footer img {
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    header, .nav, .hero-container {
+        flex-direction: column;
+    }
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    .ratings, .about-movie {
+        flex-basis: 100%;
+    }
+
+    .ratings, .movie-type {
+        flex-basis: 100%;
+    }
+
+    .about-movie {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .movie-images {
+        flex-direction: column;
+    }
+
+    .movie-image {
+        width: 100%;
+        margin: 10px 0;
+
+    }
+
+    .nav .nav-items a {
+        font-size: 0.8em;
+    }
+
+    .movie-type .type {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .ratings, .movie-type {
+        padding: 10px;
+    }
+    
+    .hero h1{
+        display: none;
+    }
+}
+

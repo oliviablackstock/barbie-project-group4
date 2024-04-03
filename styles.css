@@ -247,6 +247,11 @@ button {
     right: 0.5%;
     transform: translateX(-50%);
 }
+button:hover {
+    background-color: var(--purple-color);
+    color: var(--white);
+    font-weight: bold;
+}
 
 .hero {
     display: flex;
@@ -262,7 +267,7 @@ button {
     color:#FFFFFF
     
 }
-main {
+main, article {
     padding: 20px;
     display: grid;
     grid-gap: 20px;
@@ -350,6 +355,35 @@ footer a {
 footer img {
     vertical-align: middle;
 }
+img_card__img {
+    display: grid;
+}
+.review {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    padding: 50px;
+    justify-items: center;
+    align-items: center;
+  }
+
+.review__img {
+    border-radius: 50%;
+    width: 275px;
+  }
+  
+figcaption {
+    max-width: 275px;
+    text-align: center;
+  }
+
+.review__text {
+    padding: 0 12px;
+}
+
+
+iframe {
+  margin: 10px;
+}
 
 @media (max-width: 768px) {
     header, .nav, .hero-container {
@@ -400,5 +434,15 @@ footer img {
     .hero h1{
         display: none;
     }
+    .review {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 50px;
+        justify-items: center;
+        align-items: center;
+      }
+      figcaption {
+        margin-bottom: 50px;
+      }
 }
 

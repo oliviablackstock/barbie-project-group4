@@ -22,6 +22,8 @@ header {
     width: 100%; /* Occupy the full width of the window */
     z-index: 1000; /* Ensure the header is above the content */
 }
+.header__review {
+  background-image: url(/images/Reviews-shoe-1600.jpg);
 
 p, a {
     font-family: 'Glacial Indifference', sans-serif;                                              

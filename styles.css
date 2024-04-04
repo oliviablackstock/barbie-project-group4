@@ -22,6 +22,8 @@ header {
     width: 100%; /* Occupy the full width of the window */
     z-index: 1000; /* Ensure the header is above the content */
 }
+.header__review {
+  background-image: url(/images/Reviews-shoe-1600.jpg);
 
 p, a {
     font-family: 'Glacial Indifference', sans-serif;                                              
@@ -300,7 +302,7 @@ main, article {
     color:#E305AD
 }
 
-.ratings h2, .movie-type h2, .about-movie h2 {
+.ratings h2, .movie-type h2, .about-movie h2, .article h2 {
     color: #4FC0FF;
     margin-bottom: 0.5em;
     -webkit-text-stroke-width: 1px;

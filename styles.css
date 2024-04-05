@@ -24,6 +24,7 @@ header {
 }
 .header__review {
   background-image: url(/images/Reviews-shoe-1600.jpg);
+}
 
 p, a {
     font-family: 'Glacial Indifference', sans-serif;                                              
@@ -357,7 +358,8 @@ footer a {
 footer img {
     vertical-align: middle;
 }
-img_card__img {
+
+.img_card__img {
     display: grid;
 }
 .review {

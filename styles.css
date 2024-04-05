@@ -42,12 +42,12 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
 }
 
 nav ul li a:hover {
-    color: rgb(55, 128, 183);
+    color: var(--blue);
 }
 
 .carousel {
@@ -128,25 +128,25 @@ input[type="radio"] {
     display: block;
     width: 12px;
     height: 12px;
-    background-color: #ffffff;
+    background-color: var(--white);
     border-radius: 50%;
     margin: 5px 0;
     transition: background-color 0.5s ease; /* Smooth transition of background color */
 }
 
 .controls label:hover::before {
-    background-color: #2091f3; /* Change background color on hover */
+    background-color: var(--blue); /* Change background color on hover */
 }
 
 .slides input[type="radio"]:checked + .controls label::before {
-    background-color: #2091f3; /* Blue fill for the active section circle */
+    background-color: var(--blue); /* Blue fill for the active section circle */
 }
 
 #slide1:checked ~ .controls label:nth-of-type(1)::before,
 #slide2:checked ~ .controls label:nth-of-type(2)::before,
 #slide3:checked ~ .controls label:nth-of-type(3)::before,
 #slide4:checked ~ .controls label:nth-of-type(4)::before {
-    background-color: #2091f3; /* Blue fill for the active section circle */
+    background-color: var(--blue); /* Blue fill for the active section circle */
 }
 
 /* Location of paragraphs for each section */
@@ -155,7 +155,7 @@ input[type="radio"] {
     position: absolute;
     bottom: 100px; /* Adjust vertical position as needed */
     left: 170px; /* Adjust horizontal position as needed */
-    color: #fff; /* Text color */
+    color: white; /* Text color */
     z-index: 2; /* Ensure text is above the navigation points */
     max-width: 400px; /* Set maximum width for the paragraph */
 }
@@ -179,8 +179,8 @@ input[type="radio"] {
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #FFC0CB;
-    color: #000;
+    background-color: var(--lightest-pink);
+    color: var(--text-color);
     line-height: 1.6;
 }
 
@@ -216,17 +216,17 @@ nav {
 }
 
 .nav-items a {
-    color: #FFFFF;
+    color: var(--white);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .nav-items a:hover {
-    color:#4FC0FF;
+    color: var(--blue-purple);
 }
 nav a, nav button {
     text-decoration: none;
-    color: white;
+    color: var(--white);
     background: none;
     border: none;
     font-size: 1em;
@@ -240,9 +240,9 @@ button {
     justify-content: center;
     max-width: 150px;
     margin-right: 10px;
-    background-color: #ffffff;
-    border: 2px solid #E305AD;
-    color: #E305AD;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+    color: var(--text-color);
     cursor: pointer;
     margin-left: auto;
     position: absolute;
@@ -252,7 +252,7 @@ button {
 }
 button:hover {
     background-color: var(--purple-color);
-    color: var(--white);
+    color: var(--text-color);
     font-weight: bold;
 }
 
@@ -266,15 +266,15 @@ button:hover {
     font-family:'Font Nickainley', cursive;
     font-size: 6em;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color:#E305AD;
-    color:#FFFFFF
-    
+    -webkit-text-stroke-color:var(--primary-color);
+    color: var(--white);
 }
+
 main, article {
     padding: 20px;
     display: grid;
     grid-gap: 20px;
-    background-color: #FFF7FC;
+    background-color: var(--lightest-pink);
 }
 
 .content-container {
@@ -298,16 +298,16 @@ main, article {
 }
 
 .ratings, .movie-type, .about-movie {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Glacial Indifference', sans-serif;
     padding: 20px;
-    color:#E305AD
+    color:var(--primary-color);
 }
 
 .ratings h2, .movie-type h2, .about-movie h2, .article h2 {
-    color: #4FC0FF;
+    color: var(--blue);
     margin-bottom: 0.5em;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color:#FF69B4;
+    -webkit-text-stroke-color: var(--primary-color);
     font-size: 2em;
 }
 
@@ -316,9 +316,9 @@ main, article {
     margin-right: 10px;
     padding: 5px 15px;
     border-radius: 15px;
-    background-color: #ffffff;
-    border: 2px solid #E305AD;
-    color: #E305AD;
+    background-color: var(--white);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
 }
 
 .about-movie p {
@@ -341,8 +341,8 @@ main, article {
 
 
 footer {
-    background: #F29AD8;
-    color: white;
+    background: var(--lightest-pink);
+    color: var(--text-color);
     text-align: center;
     padding: 20px;
     position: relative;

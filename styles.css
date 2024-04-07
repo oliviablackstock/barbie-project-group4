@@ -29,6 +29,7 @@ header {
 .header_awards {
     background-image: url("https://images.alphacoders.com/131/1318738.jpeg");
 }
+
 p, a {
     font-family: 'Glacial Indifference', sans-serif;                                              
 }
@@ -181,7 +182,7 @@ input[type="radio"] {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Glacial Indifference', sans-serif;
     background-color: var(--lightest-pink);
     color: var(--text-color);
     line-height: 1.6;
@@ -344,13 +345,15 @@ main, article {
 
 
 footer {
-    background: var(--lightest-pink);
+    background: var(--primary-color);
     color: var(--text-color);
     text-align: center;
     padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
+    font-family: 'Glacial Indifference', sans-serif;
+    font-weight: bold;
 }
 
 footer a {
@@ -488,6 +491,7 @@ iframe {
 }
 .header_cast {
     background-image: url(/images/cast_header.webp);
+    height: 500px;
 }
 .cast-grid {
     display: grid;

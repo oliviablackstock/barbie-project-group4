@@ -414,6 +414,7 @@ iframe {
         transform: translateZ(100px) rotateY(-360deg);
         z-index: 10;
       }
+    }
 
 @media (max-width: 768px) {
     header, .nav, .hero-container {
@@ -474,5 +475,60 @@ iframe {
       figcaption {
         margin-bottom: 50px;
       }
+}
+.header_cast {
+    background-image: url(/images/cast_header.webp);
+}
+.cast-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 50px;
+    text-align: center;
+    padding: 20px 50px 20px 50px;
+}
+
+.grid-item {
+    border: var(--purple-color) 10px;
+}
+
+.grid-item > img {
+    max-width: 250px;
+    max-height: 300px;
+    display: grid;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.cast_hero > h1 {
+    position: absolute;
+    color: var(--lightest-pink); 
+    font-size: 100px;
+    -webkit-text-stroke: 3px var(--primary-color);
+    text-align: center;
+    z-index: 1;
+  }
+
+.cast_hero {
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    top: 0; 
+    text-align: center;
+    opacity: 0.80;
+}
+
+.cast_hero > img {
+    height: 100vh;
+}
+
+blockquote > a {
+    color: var(--primary-color);
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    transform: scale(2);
 }
 

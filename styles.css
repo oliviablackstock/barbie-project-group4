@@ -390,6 +390,13 @@ iframe {
 }
 
 /*Award Page*/
+.awardicons {
+    display: flex; 
+    gap: 100px; 
+    align-items: center;
+    justify-content: center;
+}
+
 .academyaward {
     animation:backflip 3s ease;
     }

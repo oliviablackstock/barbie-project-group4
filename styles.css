@@ -26,6 +26,9 @@ header {
   background-image: url(/images/Reviews-shoe-1600.jpg);
 }
 
+.header_awards {
+    background-image: url("https://images.alphacoders.com/131/1318738.jpeg");
+}
 p, a {
     font-family: 'Glacial Indifference', sans-serif;                                              
 }

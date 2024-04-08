@@ -30,6 +30,10 @@ header {
     background-image: url("https://images.alphacoders.com/131/1318738.jpeg");
 }
 
+.header__history {
+    background-image: url("/images/History_background4.jpg");
+}
+
 p, a {
     font-family: 'Glacial Indifference', sans-serif;                                              
 }

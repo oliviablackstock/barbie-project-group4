@@ -30,6 +30,10 @@ header {
     background-image: url("https://images.alphacoders.com/131/1318738.jpeg");
 }
 
+.header_cast {
+    background-image: url(/images/cast_header.webp);
+}
+
 p, a {
     font-family: 'Glacial Indifference', sans-serif;                                              
 }
@@ -304,8 +308,19 @@ main, article {
 .ratings, .movie-type, .about-movie {
     font-family: 'Glacial Indifference', sans-serif;
     padding: 20px;
-    color:var(--primary-color);
+    color:var(--text-color);
 }
+
+.cast_h2 {
+    color: var(--blue);
+    margin-bottom: 0.5em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--primary-color);
+    font-size: 2em;
+    text-align: center;
+    padding-top: 30px;
+}
+
 
 .ratings h2, .movie-type h2, .about-movie h2, .article h2 {
     color: var(--blue);
@@ -393,6 +408,38 @@ figcaption {
 
 iframe {
   margin: 10px;
+}
+
+.cast-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 50px;
+    text-align: center;
+    align-items: center;
+    padding: 20px 50px 20px 50px;
+}
+
+.grid-item > img {
+    max-width: 250px;
+    max-height: 300px;
+    align-items: center;
+    padding: 20px 50px 20px 50px;
+}
+
+h3 {
+    color: var(--blue);
+    margin-bottom: 0.5em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--primary-color);
+    font-size: 2em;
+}
+
+blockquote > a {
+    color: var(--primary-color);
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    transform: scale(2);
 }
 
 /*Award Page*/
@@ -488,61 +535,10 @@ iframe {
       figcaption {
         margin-bottom: 50px;
       }
-}
-.header_cast {
-    background-image: url(/images/cast_header.webp);
-    height: 500px;
-}
-.cast-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px 50px;
-    text-align: center;
-    padding: 20px 50px 20px 50px;
-}
 
-.grid-item {
-    border: var(--purple-color) 10px;
-}
-
-.grid-item > img {
-    max-width: 250px;
-    max-height: 300px;
-    display: grid;
-    align-items: center;
-    padding-top: 30px;
-}
-
-.cast_hero > h1 {
-    position: absolute;
-    color: var(--lightest-pink); 
-    font-size: 100px;
-    -webkit-text-stroke: 3px var(--primary-color);
-    text-align: center;
-    z-index: 1;
-  }
-
-.cast_hero {
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    top: 0; 
-    text-align: center;
-    opacity: 0.80;
-}
-
-.cast_hero > img {
-    height: 100vh;
-}
-
-blockquote > a {
-    color: var(--primary-color);
-    font-size: larger;
-    font-weight: bold;
-    text-align: center;
-    transform: scale(2);
+      .cast-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
 }
 

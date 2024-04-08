@@ -33,7 +33,9 @@ header {
 .header__history {
     background-image: url("/images/History_background4.jpg");
 }
-
+.article__image {
+    width: 500px;
+}
 p, a {
     font-family: 'Glacial Indifference', sans-serif;                                              
 }

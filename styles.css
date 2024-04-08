@@ -23,7 +23,7 @@ header {
     z-index: 1000; /* Ensure the header is above the content */
 }
 .header__review {
-  background-image: url(/images/Reviews-shoe-1600.jpg);
+  background-image: url('images/Reviews-shoe-1600.jpg');
 }
 
 .header_awards {
@@ -31,11 +31,11 @@ header {
 }
 
 .header_cast {
-    background-image: url(/images/cast_header.webp);
+    background-image: url('images/cast_header.webp');
 }
 
 .header__history {
-    background-image: url("/images/History_background4.jpg");
+    background-image: url('images/History_background4.jpg');
 }
 .article__image {
     width: 500px;

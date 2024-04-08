@@ -318,10 +318,10 @@ main, article {
 }
 
 .cast_h2 {
-    color: var(--blue);
+    color: var(--primary-color);
     margin-bottom: 0.5em;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--primary-color);
+    -webkit-text-stroke-color: var(--blue);
     font-size: 2em;
     text-align: center;
     padding-top: 30px;
@@ -433,10 +433,10 @@ iframe {
 }
 
 h3 {
-    color: var(--blue);
+    color: var(--primary-color);
     margin-bottom: 0.5em;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--primary-color);
+    -webkit-text-stroke-color: var(--blue);
     font-size: 2em;
 }
 
